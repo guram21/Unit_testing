@@ -1,7 +1,5 @@
 const sum = (a, b) => a + b;
 
-module.exports = {sum, mult};
-
 const isAdult = num => num > 17 ? true : false;
 
 const sortArrayUp = arr => arr.sort((a, b) => a - b);
@@ -19,3 +17,5 @@ const isUpperCase = str => str === str.toUpperCase();
 const isLowerCase = str => str === str.toLowerCase();
 
 const isInteger = num => (num ^ 0) === num;
+
+module.exports = {sum, isAdult, sortArrayUp, sortArrayDown, isPalindrome, isOddNumber, isEvenNumber, isUpperCase, isLowerCase, isInteger};
