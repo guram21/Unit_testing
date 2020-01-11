@@ -1,6 +1,6 @@
 const sum = (a, b) => a + b;
 
-const isAdult = num => num > 17 ? true : false;
+const isAdult = num => num > 17;
 
 const sortArrayUp = arr => arr.sort((a, b) => a - b);
 
