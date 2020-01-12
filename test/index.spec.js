@@ -1,7 +1,18 @@
 const assert = require('assert');
 const {expect} = require('chai');
 
-const {sum, isAdult, sortArrayUp, sortArrayDown, isPalindrome, isOddNumber, isEvenNumber, isUpperCase, isLowerCase, isInteger} = require('../index');
+const {
+  sum,
+  isAdult,
+  sortArrayUp,
+  sortArrayDown,
+  isPalindrome,
+  isOddNumber,
+  isEvenNumber,
+  isUpperCase,
+  isLowerCase,
+  isInteger
+} = require('../index');
 
 describe('function sum', () => {
 
