@@ -10,7 +10,7 @@ describe('function sum', () => {
   });
 
   it('should function sum not equals 0', () => {
-    assert.notEqual(sum(2,4), 0);
+    assert.notEqual(sum(2, 4), 0);
   });
 });
 
