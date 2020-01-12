@@ -1,6 +1,3 @@
-// Function: Sum of numbers
-const sum = (a, b) => a + b;
-
 // Function: Is an adult?
 const isAdult = num => num <= 0 ? undefined : num > 17;
 
@@ -28,8 +25,10 @@ const isLowerCase = str => str === str.toLowerCase();
 // Function: Is a number Integer?
 const isInteger = num => (num ^ 0) === num;
 
+// Function: Replace spaces in a string with underscore
+const spaceToUnderscore = str => str.replace(/[' ']/g, '_');
+
 module.exports = {
-  sum,
   isAdult,
   sortArrayUp,
   sortArrayDown,
@@ -38,5 +37,6 @@ module.exports = {
   isEvenNumber,
   isUpperCase,
   isLowerCase,
-  isInteger
+  isInteger,
+  spaceToUnderscore
 };
