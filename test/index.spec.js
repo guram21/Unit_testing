@@ -2,7 +2,6 @@ const assert = require('assert');
 const {expect} = require('chai');
 
 const {
-  sum,
   isAdult,
   sortArrayUp,
   sortArrayDown,
@@ -11,9 +10,11 @@ const {
   isEvenNumber,
   isUpperCase,
   isLowerCase,
-  isInteger
+  isInteger,
+  spaceToUnderscore
 } = require('../index');
 
+/*
 describe('function sum', () => {
 
   it('should function sum works correct', () => {
@@ -26,7 +27,4 @@ describe('function sum', () => {
     expect(sum(2, 4)).to.not.equal(0);
   });
 });
-
-it('should function sum works correct', () => {
-  assert.equal(sum(2, 2), 4);
-});
+ */
