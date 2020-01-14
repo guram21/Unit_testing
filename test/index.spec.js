@@ -2,7 +2,6 @@ const assert = require('assert');
 const {expect} = require('chai');
 
 const {
-  isAdult,
   sortArrayUp,
   sortArrayDown,
   isPalindrome,
