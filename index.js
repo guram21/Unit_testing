@@ -11,7 +11,7 @@ const sortArrayDown = arr => arr.sort((a, b) => b - a);
 const isPalindrome = str => (str = str.toLowerCase()) === str.split``.reverse().join``;
 
 // Function: Is it an Odd number?
-const isOddNumber = num => num % 2 !== 0;
+const isOddNumber = num => typeof num !== 'number' || isNaN(num) ? 'Enter numeric value' : num % 2 !== 0;
 
 // Function: Is it an Even number?
 const isEvenNumber = num => num % 2 === 0;

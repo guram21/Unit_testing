@@ -8,7 +8,7 @@ describe('function sortArrayUp', () => {
     assert.deepEqual(sortArrayUp([4, 3, 2, 1, 0]), [0, 1, 2, 3, 4]);
   });
   // Chai
-  it('should return array sorted in ascending order', () =>{
+  it('should return array sorted in ascending order', () => {
     expect(sortArrayUp([4, 3, 2, 1, 0])).deep.eq([0, 1, 2, 3, 4]);
   });
 

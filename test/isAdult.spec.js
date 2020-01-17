@@ -4,11 +4,11 @@ const {isAdult} = require('../index');
 
 describe('function isAdult', () => {
 
-  it('should return true if age is 18 and older', () =>{
+  it('should return true if age is 18 and older', () => {
     assert.deepEqual(isAdult(18), true);
   });
   // Chai
-  it('should return true if age is 18 and older', () =>{
+  it('should return true if age is 18 and older', () => {
     expect(isAdult(18)).true;
   });
 

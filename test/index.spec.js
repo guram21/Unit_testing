@@ -2,8 +2,6 @@ const assert = require('assert');
 const {expect} = require('chai');
 
 const {
-  isPalindrome,
-  isOddNumber,
   isEvenNumber,
   isUpperCase,
   isLowerCase,
