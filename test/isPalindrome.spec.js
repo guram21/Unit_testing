@@ -1,8 +1,8 @@
 const assert = require('assert');
 const {expect} = require('chai');
-const {isAdult} = require('../index');
+const {isPalindrome} = require('../index');
 
 describe('function isPalindrome', () => {
 
 
-}
+});
