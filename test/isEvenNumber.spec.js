@@ -37,11 +37,11 @@ describe('function isEvenNumber', () => {
   });
 
   it('should return false for empty value', () => {
-    assert.notEqual(isEvenNumber(), true);
+    assert.notEqual(isEvenNumber(''), true);
   });
   // Chai
   it('should return false for empty value', () => {
-    expect(isEvenNumber()).false;
+    expect(isEvenNumber('')).false;
   });
 
 });

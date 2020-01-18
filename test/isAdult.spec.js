@@ -37,11 +37,11 @@ describe('function isAdult', () => {
   });
 
   it('should return false for empty value', () => {
-    assert.notEqual(isAdult(), true);
+    assert.notEqual(isAdult(''), true);
   });
   // Chai
   it('should return false for empty value', () => {
-    expect(isAdult()).false;
+    expect(isAdult('')).false;
   });
 
 });

@@ -33,7 +33,7 @@ describe('function isPalindrome', () => {
   });
   // Chai
   it('should return false for empty string',()  => {
-    expect(isPalindrome()).false;
+    expect(isPalindrome('')).false;
   });
 
 });
