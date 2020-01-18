@@ -20,19 +20,19 @@ describe('function isAdult', () => {
     expect(isAdult(17)).false;
   });
 
-  it('should return `undefined` if age is equal to 0', () => {
-    assert.equal(isAdult(0), undefined);
+  it('should return false if value is equal to 0', () => {
+    assert.equal(isAdult(0), false);
   });
   // Chai
-  it('should return `undefined` if age is equal to 0', () => {
-    expect(isAdult(0)).equal(undefined);
+  it('should return false if value is equal to 0', () => {
+    expect(isAdult(0)).false;
   });
 
-  it('should return `undefined` if age is below 0', () => {
-    assert.equal(isAdult(-1), undefined);
+  it('should return false if value is below 0', () => {
+    assert.equal(isAdult(-1), false);
   });
   // Chai
-  it('should return `undefined` if age is below 0', () => {
-    expect(isAdult(-1)).equal(undefined);
+  it('should return false if value is below 0', () => {
+    expect(isAdult(-1)).false;
   });
 });
