@@ -19,27 +19,27 @@ describe('function isOddNumber', () => {
     expect(isOddNumber(2)).false;
   });
 
-  it('should return "Enter numeric value" if entry is NaN', () => {
-    assert.equal(isOddNumber(NaN), 'Enter numeric value');
+  it('should return false if entry is NaN', () => {
+    assert.notEqual(isOddNumber(NaN), true);
   });
   // Chai
-  it('should return "Enter numeric value" if entry is NaN', () => {
-    expect(isOddNumber(NaN)).eq('Enter numeric value');
+  it('should return false if entry is NaN', () => {
+    expect(isOddNumber(NaN)).false;
   });
 
-  it('should return "Enter numeric value" if entry is string', () => {
-    assert.equal(isOddNumber('1'), 'Enter numeric value');
+  it('should return false if entry is string', () => {
+    assert.notEqual(isOddNumber('1'), true);
   });
   // Chai
-  it('should return "Enter numeric value" if entry is string', () => {
-    expect(isOddNumber('1')).eq('Enter numeric value');
+  it('should return false if entry is string', () => {
+    expect(isOddNumber('1')).false;
   });
 
-  it('should return "Enter numeric value" if entry is empty', () => {
-    assert.equal(isOddNumber(), 'Enter numeric value');
+  it('should return false if entry is empty', () => {
+    assert.notEqual(isOddNumber(), true);
   });
   // Chai
-  it('should return "Enter numeric value" if entry is empty', () => {
-    expect(isOddNumber()).eq('Enter numeric value');
+  it('should return false if entry is empty', () => {
+    expect(isOddNumber()).false;
   });
 });
