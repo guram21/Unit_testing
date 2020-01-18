@@ -12,11 +12,11 @@ describe('function sortArrayDown', () => {
     expect(sortArrayDown([0, 1, 2, 3, 4])).deep.eq([4, 3, 2, 1, 0]);
   });
 
-  it('should return an empty array if array is empty', () => {
+  it('should return empty array if array is empty', () => {
     assert.deepEqual(sortArrayDown([]), []);
   });
   // Chai
-  it('should return an empty array if array is empty', () => {
+  it('should return empty array if array is empty', () => {
     expect(sortArrayDown([])).deep.eq([]);
   });
 });
