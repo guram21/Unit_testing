@@ -4,19 +4,19 @@ const {isAdult} = require('../index');
 
 describe('function isAdult', () => {
 
-  it('should return true if age is 18 and older', () => {
+  it('should return true if value is greater than or equal to 18', () => {
     assert.deepEqual(isAdult(18), true);
   });
   // Chai
-  it('should return true if age is 18 and older', () => {
+  it('should return true if value is greater than or equal to 18', () => {
     expect(isAdult(18)).true;
   });
 
-  it('should return false if age is under 18', () => {
+  it('should return false if value is less than 18', () => {
     assert.notEqual(isAdult(17), true);
   });
   // Chai
-  it('shhould return false if age is under 18', () => {
+  it('shhould return false if value is less than 18', () => {
     expect(isAdult(17)).false;
   });
 

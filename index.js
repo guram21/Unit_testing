@@ -1,5 +1,5 @@
 // Function: Is an adult?
-const isAdult = num => num <= 0 ? undefined : num > 17;
+const isAdult = num => num <= 0 ? false : num > 17;
 
 // Function: Sort numbers in an array in ascending order
 const sortArrayUp = arr => arr.sort((a, b) => a - b);
