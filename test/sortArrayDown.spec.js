@@ -19,4 +19,5 @@ describe('function sortArrayDown', () => {
   it('should return empty array if array is empty', () => {
     expect(sortArrayDown([])).deep.eq([]);
   });
+
 });

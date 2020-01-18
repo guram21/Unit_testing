@@ -3,6 +3,7 @@ const {expect} = require('chai');
 const {isOddNumber} = require('../index');
 
 describe('function isOddNumber', () => {
+
   it('should return true if value is odd number', () => {
     assert.equal(isOddNumber(1), true);
   });
@@ -42,4 +43,5 @@ describe('function isOddNumber', () => {
   it('should return false for empty value', () => {
     expect(isOddNumber()).false;
   });
+
 });

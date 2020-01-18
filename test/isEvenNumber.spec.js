@@ -2,7 +2,8 @@ const assert = require('assert');
 const {expect} = require('chai');
 const {isEvenNumber} = require('../index');
 
-describe('function isOddNumber', () => {
+describe('function isEvenNumber', () => {
+
   it('should return true if value is even number', () => {
     assert.equal(isEvenNumber(2), true);
   });
@@ -42,4 +43,5 @@ describe('function isOddNumber', () => {
   it('should return false for empty value', () => {
     expect(isEvenNumber()).false;
   });
+
 });

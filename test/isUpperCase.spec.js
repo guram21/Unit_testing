@@ -1,39 +1,39 @@
 const assert = require('assert');
 const {expect} = require('chai');
-const {isPalindrome} = require('../index');
+const {isUpperCase} = require('../index');
 
-describe('function isPalindrome', () => {
+describe('function isUpperCase', () => {
 
   it('should return true if value is palindrome', () => {
-    assert.equal(isPalindrome('Anna'), true);
+    assert.equal(isUpperCase('Anna'), true);
   });
   // Chai
   it('should return true if value is palindrome', () => {
-    expect(isPalindrome('Anna')).true;
+    expect(isUpperCase('Anna')).true;
   });
 
   it('should return false if value is not palindrome', () => {
-    assert.notEqual(isPalindrome('Guram'), true);
+    assert.notEqual(isUpperCase('String'), true);
   });
   // Chai
   it('should return false if value is not palindrome', () => {
-    expect(isPalindrome('Guram')).false;
+    expect(isUpperCase('String')).false;
   });
 
   it('should return false if value is not string', () => {
-    assert.notEqual(isPalindrome(123), true);
+    assert.notEqual(isUpperCase(123), true);
   });
   // Chai
   it('should return false if value is not string', () => {
-    expect(isPalindrome(123)).false;
+    expect(isUpperCase(123)).false;
   });
 
   it('should return false for empty value',()  => {
-    assert.equal(isPalindrome(''), true);
+    assert.equal(isUpperCase(), true);
   });
   // Chai
   it('should return false for empty string',()  => {
-    expect(isPalindrome()).false;
+    expect(isUpperCase()).false;
   });
 
 });

@@ -43,4 +43,5 @@ describe('function isAdult', () => {
   it('should return false for empty value', () => {
     expect(isAdult()).false;
   });
+
 });
