@@ -8,7 +8,7 @@ const sortArrayUp = arr => arr.sort((a, b) => a - b);
 const sortArrayDown = arr => arr.sort((a, b) => b - a);
 
 // Function: Is it Palindrome?
-const isPalindrome = str => (str = str.toLowerCase()) === str.split``.reverse().join``;
+const isPalindrome = str => typeof str !== 'string' ? false : (str = str.toLowerCase()) === str.split``.reverse().join``;
 
 // Function: Is it an Odd number?
 const isOddNumber = num => typeof num !== 'number' || isNaN(num) ? false : num % 2 !== 0;
