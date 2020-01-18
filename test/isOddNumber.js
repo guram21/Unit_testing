@@ -35,11 +35,11 @@ describe('function isOddNumber', () => {
     expect(isOddNumber('1')).false;
   });
 
-  it('should return false if value is empty', () => {
+  it('should return false for empty value', () => {
     assert.notEqual(isOddNumber(), true);
   });
   // Chai
-  it('should return false if value is empty', () => {
+  it('should return false for empty value', () => {
     expect(isOddNumber()).false;
   });
 });

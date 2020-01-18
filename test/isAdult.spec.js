@@ -35,4 +35,12 @@ describe('function isAdult', () => {
   it('should return false if value is below 0', () => {
     expect(isAdult(-1)).false;
   });
+
+  it('should return false for empty value', () => {
+    assert.notEqual(isAdult(), true);
+  });
+  // Chai
+  it('should return false for empty value', () => {
+    expect(isAdult()).false;
+  });
 });
