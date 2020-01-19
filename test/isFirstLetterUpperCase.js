@@ -8,23 +8,23 @@ describe('function isFirstLetterUpperCase', () => {
     assert.equal(isFirstLetterUpperCase('String'), true);
   });
   // Chai
-  it('should return true if value is palindrome', () => {
+  it('should return true if first letter of value is uppercase', () => {
     expect(isFirstLetterUpperCase('String')).true;
   });
 
-  it('should return false if value is not palindrome', () => {
+  it('should return false if first letter of value is not uppercase', () => {
     assert.notEqual(isFirstLetterUpperCase('string'), true);
   });
   // Chai
-  it('should return false if value is not palindrome', () => {
+  it('should return false if first letter of value is not uppercase', () => {
     expect(isFirstLetterUpperCase('string')).false;
   });
 
-  it('should return false if value is not string', () => {
+  it('should return false if value is number', () => {
     assert.notEqual(isFirstLetterUpperCase(123), true);
   });
   // Chai
-  it('should return false if value is not string', () => {
+  it('should return false if value is number', () => {
     expect(isFirstLetterUpperCase(123)).false;
   });
 

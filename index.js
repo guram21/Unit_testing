@@ -17,7 +17,11 @@ const isOddNumber = num => typeof num !== 'number' || isNaN(num) ? false : num %
 const isEvenNumber = num => typeof num !== 'number' || isNaN(num) ? false : num % 2 === 0;
 
 // Function: Is it first letter in Uppercase?
-const isFirstLetterUpperCase = str => parseInt(str) === 'number' || typeof str !== 'string' ? false : str[0] === str[0].toUpperCase();
+const isFirstLetterUpperCase = str =>
+  typeof str !== 'string' ? false :
+    !isNaN(str) ? false :
+      typeof +str[0] === 'number' && !isNaN(Number(str[0])) ? false :
+        str[0] === str[0].toUpperCase();
 
 // Function: Is it string in Lowercase?
 const isLowerCase = str => str === str.toLowerCase();
