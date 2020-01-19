@@ -4,44 +4,36 @@ const {isFirstLetterUpperCase} = require('../index');
 
 describe('function isFirstLetterUpperCase', () => {
 
-  it('should return true if first letter of value is uppercase', () => {
+  it('should return true if first letter of value uppercase', () => {
     assert.equal(isFirstLetterUpperCase('String'), true);
   });
   // Chai
-  it('should return true if first letter of value is uppercase', () => {
+  it('should return true if first letter of value uppercase', () => {
     expect(isFirstLetterUpperCase('String')).true;
   });
 
-  it('should return false if first letter of value is not uppercase', () => {
-    assert.notEqual(isFirstLetterUpperCase('string'), true);
+  it('should return false if first letter of value not uppercase', () => {
+    assert.equal(isFirstLetterUpperCase('string'), false);
   });
   // Chai
-  it('should return false if first letter of value is not uppercase', () => {
+  it('should return false if first letter of value not uppercase', () => {
     expect(isFirstLetterUpperCase('string')).false;
   });
 
-  it('should return false if value is number', () => {
-    assert.notEqual(isFirstLetterUpperCase(123), true);
+  it('should return false for not string value', () => {
+    assert.equal(isFirstLetterUpperCase(123), false);
   });
   // Chai
-  it('should return false if value is number', () => {
+  it('should return false for not string value', () => {
     expect(isFirstLetterUpperCase(123)).false;
   });
 
-  it('should return false if value is string with numbers', () => {
-    assert.notEqual(isFirstLetterUpperCase('123'), true);
-  });
-  // Chai
-  it('should return false if value is string with numbers', () => {
-    expect(isFirstLetterUpperCase('123')).false;
-  });
-
   it('should return false for empty value',()  => {
-    assert.notEqual(isFirstLetterUpperCase(), true);
+    assert.equal(isFirstLetterUpperCase(''), false);
   });
   // Chai
-  it('should return false for empty string',()  => {
-    expect(isFirstLetterUpperCase()).false;
+  it('should return false for empty value',()  => {
+    expect(isFirstLetterUpperCase('')).false;
   });
 
 });
