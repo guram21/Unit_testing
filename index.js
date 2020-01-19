@@ -28,7 +28,7 @@ const isFirstLetterUpperCase = str =>
         str[0] === str[0].toUpperCase();
 
 // Function: First letter Lowercase?
-const isLowerCase = str =>
+const isFirsLetterLowerCase = str =>
   !isNaN(str) ? false :
     typeof str !== 'string' ? false :
       !/^[a-zA-Z]*$/.test(str) ? false :
@@ -48,7 +48,7 @@ module.exports = {
   isOddNumber,
   isEvenNumber,
   isFirstLetterUpperCase,
-  isLowerCase,
+  isFirsLetterLowerCase,
   isInteger,
   spaceToUnderscore
 };
