@@ -4,15 +4,15 @@ const {isOddNumber} = require('../index');
 
 describe('function isOddNumber', () => {
 
-  it('should return true if value odd number', () => {
+  it('should return true for odd number value', () => {
     assert.equal(isOddNumber(1), true);
   });
   // Chai
-  it('should return true if value odd number', () => {
+  it('should return true for odd number value', () => {
     expect(isOddNumber(1)).true;
   });
 
-  it('should return false if value not odd number', () => {
+  it('should return false for not odd number value', () => {
     assert.notEqual(isOddNumber(2), true);
   });
   // Chai
@@ -20,19 +20,19 @@ describe('function isOddNumber', () => {
     expect(isOddNumber(2)).false;
   });
 
-  it('should return false if value NaN', () => {
+  it('should return false for NaN value', () => {
     assert.notEqual(isOddNumber(NaN), true);
   });
   // Chai
-  it('should return false if value NaN', () => {
+  it('should return false for NaN value', () => {
     expect(isOddNumber(NaN)).false;
   });
 
-  it('should return false if value string', () => {
+  it('should return false for string value', () => {
     assert.notEqual(isOddNumber('1'), true);
   });
   // Chai
-  it('should return false if value is string', () => {
+  it('should return false for string value', () => {
     expect(isOddNumber('1')).false;
   });
 
