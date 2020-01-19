@@ -13,7 +13,7 @@ describe('function isOddNumber', () => {
   });
 
   it('should return false for not odd number value', () => {
-    assert.notEqual(isOddNumber(2), true);
+    assert.equal(isOddNumber(2), false);
   });
   // Chai
   it('should return false for not odd number value', () => {
@@ -21,7 +21,7 @@ describe('function isOddNumber', () => {
   });
 
   it('should return false for NaN value', () => {
-    assert.notEqual(isOddNumber(NaN), true);
+    assert.equal(isOddNumber(NaN), false);
   });
   // Chai
   it('should return false for NaN value', () => {
@@ -29,7 +29,7 @@ describe('function isOddNumber', () => {
   });
 
   it('should return false for string value', () => {
-    assert.notEqual(isOddNumber('1'), true);
+    assert.equal(isOddNumber('1'), false);
   });
   // Chai
   it('should return false for string value', () => {
@@ -37,7 +37,7 @@ describe('function isOddNumber', () => {
   });
 
   it('should return false for empty value', () => {
-    assert.notEqual(isOddNumber(''), true);
+    assert.equal(isOddNumber(''), false);
   });
   // Chai
   it('should return false for empty value', () => {
