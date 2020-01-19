@@ -22,13 +22,17 @@ const isEvenNumber = num => typeof num !== 'number' || isNaN(num) ? false : num 
 
 // Function: First letter Uppercase?
 const isFirstLetterUpperCase = str =>
-  typeof str !== 'string' ? false :
-    !isNaN(str) ? false :
+  !isNaN(str) ? false :
+    typeof str !== 'string' ? false :
       !/^[a-zA-Z]*$/.test(str) ? false :
         str[0] === str[0].toUpperCase();
 
 // Function: First letter Lowercase?
-const isLowerCase = str => str === str.toLowerCase();
+const isLowerCase = str =>
+  !isNaN(str) ? false :
+    typeof str !== 'string' ? false :
+      !/^[a-zA-Z]*$/.test(str) ? false :
+        str === str.toLowerCase();
 
 // Function: Integer?
 const isInteger = num => (num ^ 0) === num;
