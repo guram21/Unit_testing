@@ -4,35 +4,35 @@ const {isEvenNumber} = require('../index');
 
 describe('function isEvenNumber', () => {
 
-  it('should return true if value even number', () => {
+  it('should return true for even number value', () => {
     assert.equal(isEvenNumber(2), true);
   });
   // Chai
-  it('should return true if value even number', () => {
+  it('should return true for even number value', () => {
     expect(isEvenNumber(2)).true;
   });
 
-  it('should return false if value not even number', () => {
+  it('should return false for not even number value', () => {
     assert.equal(isEvenNumber(1), false);
   });
   // Chai
-  it('should return false if value not even number', () => {
+  it('should return false for not even number value', () => {
     expect(isEvenNumber(1)).false;
   });
 
-  it('should return false if value NaN', () => {
+  it('should return false for NaN value', () => {
     assert.equal(isEvenNumber(NaN), false);
   });
   // Chai
-  it('should return false if value NaN', () => {
+  it('should return false for NaN value', () => {
     expect(isEvenNumber(NaN)).false;
   });
 
-  it('should return false if value string', () => {
+  it('should return false for string value', () => {
     assert.equal(isEvenNumber('1'), false);
   });
   // Chai
-  it('should return false if value string', () => {
+  it('should return false for string value', () => {
     expect(isEvenNumber('1')).false;
   });
 
