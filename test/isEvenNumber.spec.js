@@ -4,19 +4,19 @@ const {isEvenNumber} = require('../index');
 
 describe('function isEvenNumber', () => {
 
-  it('should return true for even number value', () => {
+  it('should return true for even number', () => {
     assert.equal(isEvenNumber(2), true);
   });
   // Chai
-  it('should return true for even number value', () => {
+  it('should return true for even number', () => {
     expect(isEvenNumber(2)).true;
   });
 
-  it('should return false for not even number value', () => {
+  it('should return false for not even number', () => {
     assert.equal(isEvenNumber(1), false);
   });
   // Chai
-  it('should return false for not even number value', () => {
+  it('should return false for not even number', () => {
     expect(isEvenNumber(1)).false;
   });
 

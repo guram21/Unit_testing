@@ -4,19 +4,19 @@ const {isFirsLetterLowerCase} = require('../index');
 
 describe('function isFirsLetterLowerCase', () => {
 
-  it('should return true if first letter of value lowercase', () => {
+  it('should return true if first letter lowercase', () => {
     assert.equal(isFirsLetterLowerCase('string'), true);
   });
   // Chai
-  it('should return true if first letter of value lowercase', () => {
+  it('should return true if first letter lowercase', () => {
     expect(isFirsLetterLowerCase('string')).true;
   });
 
-  it('should return false if first letter of value not lowercase', () => {
+  it('should return false if first letter not lowercase', () => {
     assert.equal(isFirsLetterLowerCase('String'), false);
   });
   // Chai
-  it('should return false if first letter of value not lowercase', () => {
+  it('should return false if first letter not lowercase', () => {
     expect(isFirsLetterLowerCase('String')).false;
   });
 

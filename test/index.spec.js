@@ -1,5 +1,3 @@
-// isLowerCase
-// isInteger
 // spaceToUnderscore
 
 // const isFirstLetterUpperCase = str =>

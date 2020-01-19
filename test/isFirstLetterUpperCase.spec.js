@@ -4,19 +4,19 @@ const {isFirstLetterUpperCase} = require('../index');
 
 describe('function isFirstLetterUpperCase', () => {
 
-  it('should return true if first letter of value uppercase', () => {
+  it('should return true if first letter uppercase', () => {
     assert.equal(isFirstLetterUpperCase('String'), true);
   });
   // Chai
-  it('should return true if first letter of value uppercase', () => {
+  it('should return true if first letter uppercase', () => {
     expect(isFirstLetterUpperCase('String')).true;
   });
 
-  it('should return false if first letter of value not uppercase', () => {
+  it('should return false if first letter not uppercase', () => {
     assert.equal(isFirstLetterUpperCase('string'), false);
   });
   // Chai
-  it('should return false if first letter of value not uppercase', () => {
+  it('should return false if first letter not uppercase', () => {
     expect(isFirstLetterUpperCase('string')).false;
   });
 
