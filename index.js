@@ -1,35 +1,39 @@
-// Function: Is an adult?
+// Function: Adult?
 const isAdult = num => num <= 0 ? false : num > 17;
 
-// Function: Sort numbers in an array in ascending order
+// Function: Sort array numbers in ascending order
 const sortArrayUp = arr => arr.sort((a, b) => a - b);
 
-// Function: Sort numbers in an array in descending order
+// Function: Sort array numbers in descending order
 const sortArrayDown = arr => arr.sort((a, b) => b - a);
 
-// Function: Is it Palindrome?
-const isPalindrome = str => typeof str !== 'string' ? false : (str = str.toLowerCase()) === str.split``.reverse().join``;
+// Function: Palindrome?
+const isPalindrome = str =>
+  typeof str !== 'string' ? false :
+    !isNaN(str) ? false :
+      typeof Number(str[0]) === 'number' && !isNaN(Number(str[0])) ? false :
+        (str = str.toLowerCase()) === str.split``.reverse().join ``;
 
-// Function: Is it an Odd number?
+// Function: Odd number?
 const isOddNumber = num => typeof num !== 'number' || isNaN(num) ? false : num % 2 !== 0;
 
-// Function: Is it an Even number?
+// Function: Even number?
 const isEvenNumber = num => typeof num !== 'number' || isNaN(num) ? false : num % 2 === 0;
 
-// Function: Is it first letter in Uppercase?
+// Function: First letter Uppercase?
 const isFirstLetterUpperCase = str =>
   typeof str !== 'string' ? false :
     !isNaN(str) ? false :
       typeof +str[0] === 'number' && !isNaN(Number(str[0])) ? false :
         str[0] === str[0].toUpperCase();
 
-// Function: Is it string in Lowercase?
+// Function: First letter Lowercase?
 const isLowerCase = str => str === str.toLowerCase();
 
-// Function: Is a number Integer?
+// Function: Integer?
 const isInteger = num => (num ^ 0) === num;
 
-// Function: Replace spaces in a string with underscore
+// Function: Replace spaces with underscore
 const spaceToUnderscore = str => str.replace(/[' ']/g, '_');
 
 module.exports = {

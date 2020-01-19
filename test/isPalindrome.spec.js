@@ -4,16 +4,16 @@ const {isPalindrome} = require('../index');
 
 describe('function isPalindrome', () => {
 
-  it('should return true if value is palindrome', () => {
+  it('should return true if value palindrome', () => {
     assert.equal(isPalindrome('Anna'), true);
   });
   // Chai
-  it('should return true if value is palindrome', () => {
+  it('should return true if value palindrome', () => {
     expect(isPalindrome('Anna')).true;
   });
 
-  it('should return false if value is not palindrome', () => {
-    assert.notEqual(isPalindrome('Guram'), true);
+  it('should return false if value not palindrome', () => {
+    assert.equal(isPalindrome('Guram'), true);
   });
   // Chai
   it('should return false if value is not palindrome', () => {
@@ -29,7 +29,7 @@ describe('function isPalindrome', () => {
   });
 
   it('should return false for empty value',()  => {
-    assert.equal(isPalindrome(''), true);
+    assert.equal(isPalindrome(''), false);
   });
   // Chai
   it('should return false for empty string',()  => {
