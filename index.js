@@ -24,7 +24,7 @@ const isEvenNumber = num => typeof num !== 'number' || isNaN(num) ? false : num 
 const isFirstLetterUpperCase = str =>
   typeof str !== 'string' ? false :
     !isNaN(str) ? false :
-      typeof +str[0] === 'number' && !isNaN(Number(str[0])) ? false :
+      !/^[a-zA-Z]*$/.test(str) ? false :
         str[0] === str[0].toUpperCase();
 
 // Function: First letter Lowercase?
