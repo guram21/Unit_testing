@@ -4,40 +4,40 @@ const {isEvenNumber} = require('../index');
 
 describe('function isEvenNumber', () => {
 
-  it('should return true if value is even number', () => {
+  it('should return true if value even number', () => {
     assert.equal(isEvenNumber(2), true);
   });
   // Chai
-  it('should return true if value is even number', () => {
+  it('should return true if value even number', () => {
     expect(isEvenNumber(2)).true;
   });
 
-  it('should return false if value is not even number', () => {
-    assert.notEqual(isEvenNumber(1), true);
+  it('should return false if value not even number', () => {
+    assert.equal(isEvenNumber(1), false);
   });
   // Chai
-  it('should return false if value is not even number', () => {
+  it('should return false if value not even number', () => {
     expect(isEvenNumber(1)).false;
   });
 
-  it('should return false if value is NaN', () => {
-    assert.notEqual(isEvenNumber(NaN), true);
+  it('should return false if value NaN', () => {
+    assert.equal(isEvenNumber(NaN), false);
   });
   // Chai
-  it('should return false if value is NaN', () => {
+  it('should return false if value NaN', () => {
     expect(isEvenNumber(NaN)).false;
   });
 
-  it('should return false if value is string', () => {
-    assert.notEqual(isEvenNumber('1'), true);
+  it('should return false if value string', () => {
+    assert.equal(isEvenNumber('1'), false);
   });
   // Chai
-  it('should return false if value is string', () => {
+  it('should return false if value string', () => {
     expect(isEvenNumber('1')).false;
   });
 
   it('should return false for empty value', () => {
-    assert.notEqual(isEvenNumber(''), true);
+    assert.equal(isEvenNumber(''), false);
   });
   // Chai
   it('should return false for empty value', () => {

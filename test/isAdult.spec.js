@@ -4,40 +4,40 @@ const {isAdult} = require('../index');
 
 describe('function isAdult', () => {
 
-  it('should return true if value is greater than or equal to 18', () => {
+  it('should return true if value greater than or equal to 18', () => {
     assert.equal(isAdult(18), true);
   });
   // Chai
-  it('should return true if value is greater than or equal to 18', () => {
+  it('should return true if value greater than or equal to 18', () => {
     expect(isAdult(18)).true;
   });
 
-  it('should return false if value is less than 18', () => {
-    assert.notEqual(isAdult(17), true);
+  it('should return false if value less than 18', () => {
+    assert.equal(isAdult(17), false);
   });
   // Chai
-  it('shhould return false if value is less than 18', () => {
+  it('should return false if value less than 18', () => {
     expect(isAdult(17)).false;
   });
 
-  it('should return false if value is equal to 0', () => {
-    assert.notEqual(isAdult(0), true);
+  it('should return false if value equal to 0', () => {
+    assert.equal(isAdult(0), false);
   });
   // Chai
-  it('should return false if value is equal to 0', () => {
+  it('should return false if value equal to 0', () => {
     expect(isAdult(0)).false;
   });
 
-  it('should return false if value is below 0', () => {
-    assert.notEqual(isAdult(-1), true);
+  it('should return false if value less than 0', () => {
+    assert.equal(isAdult(-1), false);
   });
   // Chai
-  it('should return false if value is below 0', () => {
+  it('should return false if value less than 0', () => {
     expect(isAdult(-1)).false;
   });
 
   it('should return false for empty value', () => {
-    assert.notEqual(isAdult(''), true);
+    assert.equal(isAdult(''), false);
   });
   // Chai
   it('should return false for empty value', () => {
