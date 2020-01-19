@@ -9,9 +9,9 @@ const sortArrayDown = arr => arr.sort((a, b) => b - a);
 
 // Function: Palindrome?
 const isPalindrome = str =>
-  typeof str !== 'string' ? false :
-    !isNaN(str) ? false :
-      typeof Number(str[0]) === 'number' && !isNaN(Number(str[0])) ? false :
+  !isNaN(str) ? false :
+    typeof str !== 'string' ? false :
+      !/^[a-zA-Z]*$/.test(str) ? false :
         (str = str.toLowerCase()) === str.split``.reverse().join ``;
 
 // Function: Odd number?
