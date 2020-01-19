@@ -13,18 +13,18 @@ describe('function isPalindrome', () => {
   });
 
   it('should return false if value not palindrome', () => {
-    assert.equal(isPalindrome('Guram'), true);
+    assert.equal(isPalindrome('Guram'), false);
   });
   // Chai
-  it('should return false if value is not palindrome', () => {
+  it('should return false if value not palindrome', () => {
     expect(isPalindrome('Guram')).false;
   });
 
-  it('should return false if value is not string', () => {
-    assert.notEqual(isPalindrome(123), true);
+  it('should return false if value not string', () => {
+    assert.equal(isPalindrome(123), false);
   });
   // Chai
-  it('should return false if value is not string', () => {
+  it('should return false if value not string', () => {
     expect(isPalindrome(123)).false;
   });
 
