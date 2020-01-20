@@ -11,7 +11,7 @@ const sortArrayDown = arr => arr.sort((a, b) => b - a);
 const isPalindrome = str =>
   !isNaN(str) ? false :
     typeof str !== 'string' ? false :
-      !/^[a-zA-Z]*$/.test(str) ? false :
+      !/[a-zA-Z]/.test(str) ? false :
         (str = str.toLowerCase()) === str.split``.reverse().join ``;
 
 // Function: Odd number?
@@ -24,14 +24,14 @@ const isEvenNumber = num => typeof num !== 'number' || isNaN(num) ? false : num 
 const isFirstLetterUpperCase = str =>
   !isNaN(str) ? false :
     typeof str !== 'string' ? false :
-      !/^[a-zA-Z]*$/.test(str) ? false :
+      !/[a-zA-Z]/.test(str) ? false :
         str[0] === str[0].toUpperCase();
 
 // Function: First letter Lowercase?
 const isFirsLetterLowerCase = str =>
   !isNaN(str) ? false :
     typeof str !== 'string' ? false :
-      !/^[a-zA-Z]*$/.test(str) ? false :
+      !/[a-zA-Z]/.test(str) ? false :
         str === str.toLowerCase();
 
 // Function: Integer?
@@ -39,7 +39,7 @@ const isInteger = num => (num ^ 0) === num;
 
 // Function: Replace spaces with underscore
 const spaceToUnderscore = str =>
-  typeof str === 'string' ?
+  /[a-zA-Z]/.test(str[0]) && isNaN(str) ?
     str.replace(/[' ']/g, '_') : false;
 
 module.exports = {
