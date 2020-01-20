@@ -1,5 +1,3 @@
-// spaceToUnderscore
-
 // const isFirstLetterUpperCase = str =>
 //   typeof str !== 'string' ? false :
 //     !isNaN(str) ? false :

@@ -38,7 +38,9 @@ const isFirsLetterLowerCase = str =>
 const isInteger = num => (num ^ 0) === num;
 
 // Function: Replace spaces with underscore
-const spaceToUnderscore = str => str.replace(/[' ']/g, '_');
+const spaceToUnderscore = str =>
+  typeof str === 'string' ?
+    str.replace(/[' ']/g, '_') : false;
 
 module.exports = {
   isAdult,
