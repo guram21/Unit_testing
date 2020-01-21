@@ -65,7 +65,7 @@ Note: To run Mocha, we need Node.js v4 or newer.
 
 `npm install --save-dev chai`
 
-### Assertion interfaces and styles
+## Assertion interfaces and styles
 
 * There are two popular way of assertion in Chai, _**expect**_ and _**should**_
 * The _**expect**_ interface provides function for assertion.
@@ -83,4 +83,3 @@ You can navigate the files using the following directory:
 * Mocha: https://mochajs.org/
 * Node.js: https://nodejs.org/en/
 * Chai: https://www.chaijs.com/
-
