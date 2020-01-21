@@ -3,7 +3,7 @@
 ## About Unit Testing
 When you test your codebase, you take a piece of code — typically a function — and verify it behaves correctly in a specific situation. Unit testing is a structured and automated way of doing this. As a result, the more tests you write, the bigger the benefit you receive. You will also have a greater level of confidence in your codebase as you continue to develop it.
 
-### Setting up the Tools
+## Setting up the Tools
 Your Machine should have node and npm installed.
 Install the node.js LTS version from [Node website](https://nodejs.org/en/). npm gets installed along with node automatically.
 
