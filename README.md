@@ -44,8 +44,8 @@ Note: To run Mocha, we need Node.js v4 or newer.
 * `npm test` works because of below test script in _package.json_ file.
 
 ```javascript
-"scripts": {
-    "test": "mocha"
+"scripts";: {
+    "test";: "mocha"
   }
 ```
 

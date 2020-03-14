@@ -10,7 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "acorn": "^7.1.1",
     "chai": "^4.2.0",
+    "minimist": "^1.2.5",
     "mocha": "^7.0.0"
   },
   "devDependencies": {
