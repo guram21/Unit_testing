@@ -13,9 +13,9 @@
   "license": "ISC",
   "dependencies": {
     "acorn": "^8.1.0",
-    "chai": "^4.3.0",
+    "chai": "^4.3.4",
     "minimist": "^1.2.5",
-    "mocha": "^8.3.0",
+    "mocha": "^8.3.2",
     "snyk": "^1.518.0"
   },
   "devDependencies": {
