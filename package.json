@@ -15,8 +15,8 @@
     "acorn": "^8.7.0",
     "chai": "^4.3.6",
     "minimist": "^1.2.6",
-    "mocha": "^9.2.1",
-    "snyk": "^1.883.0"
+    "mocha": "^9.2.2",
+    "snyk": "^1.834.0"
   },
   "devDependencies": {
     "eslint": "^6.8.0"
