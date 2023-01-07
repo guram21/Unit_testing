@@ -15,7 +15,7 @@
     "acorn": "^8.8.1",
     "chai": "^4.3.7",
     "minimist": "^1.2.7",
-    "mocha": "^10.1.0",
+    "mocha": "^10.2.0",
     "snyk": "^1.1064.0"
   },
   "devDependencies": {
