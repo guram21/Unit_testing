@@ -16,7 +16,7 @@
     "chai": "^4.3.7",
     "minimist": "^1.2.8",
     "mocha": "^10.2.0",
-    "snyk": "^1.1179.0"
+    "snyk": "^1.1187.0"
   },
   "devDependencies": {
     "eslint": "^6.8.0"
