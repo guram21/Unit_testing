@@ -12,11 +12,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "acorn": "^8.10.0",
-    "chai": "^4.3.8",
+    "acorn": "^8.11.3",
+    "chai": "^4.3.10",
     "minimist": "^1.2.8",
     "mocha": "^10.3.0",
-    "snyk": "^1.1264.0"
+    "snyk": "^1.1266.0"
   },
   "devDependencies": {
     "eslint": "^6.8.0"
