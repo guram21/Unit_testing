@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "acorn": "^8.13.0",
+    "acorn": "^8.14.0",
     "chai": "^5.1.2",
     "minimist": "^1.2.8",
     "mocha": "^11.0.1",
